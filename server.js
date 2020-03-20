@@ -5,7 +5,7 @@ let router = require('./routes/routes.js');
 let userController = require('./controller/UserController.js');
 let app = express();
 var port = '8080'
-const dburl = "mongodb://localhost/nodesample";
+const dburl = "mongodb://127.0.0.1:39808/nodesample";
 var collectionName = "testsample";
 var collection;
 app.use(bodyParser.urlencoded({
