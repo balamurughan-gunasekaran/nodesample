@@ -4,8 +4,8 @@ let mongoose = require('mongoose');
 let router = require('./routes/routes.js');
 let userController = require('./controller/UserController.js');
 let app = express();
-var port = '8080'
-const dburl = "mongodb://nodesample-sample-app.apps.us-east-1.starter.openshift-online.com/nodesample";
+var port = '8081'
+const dburl = "mongodb://localhost/nodesample";
 var collectionName = "testsample";
 var collection;
 app.use(bodyParser.urlencoded({
