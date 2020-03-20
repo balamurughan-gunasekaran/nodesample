@@ -4,7 +4,7 @@ let mongoose = require('mongoose');
 let router = require('./routes/routes.js');
 let userController = require('./controller/UserController.js');
 let app = express();
-var port = '8081'
+var port = '8080'
 const dburl = "mongodb://localhost/nodesample";
 var collectionName = "testsample";
 var collection;
