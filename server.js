@@ -5,7 +5,7 @@ let router = require('./routes/routes.js');
 let userController = require('./controller/UserController.js');
 let app = express();
 var port = '8080'
-let dburl = "mongodb://127.0.0.1:27017/test";
+let dburl = "mongodb://172.30.174.172:27017/test";
 //take advantage of openshift env vars when available:
 if(process.env.OPENSHIFT_MONGODB_DB_URL){
     console.log("inside openshift");
