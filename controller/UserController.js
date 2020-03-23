@@ -7,12 +7,13 @@ exports.getUser = function (req, res) {
                 status: "error",
                 message: err,
             });
-        }
+        }else{
         res.json({
             status: "success",
             message: "User retrieved successfully",
             data: users
         });
+    }
     });
 };
 exports.saveUser = function(req,res){
